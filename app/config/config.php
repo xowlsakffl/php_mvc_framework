@@ -9,7 +9,7 @@ define('DB_NAME', 'php_oop_udemy_gallery');
 define('APPROOT', dirname(dirname(__FILE__)));
 
 //URLROOT
-define('URLROOT', 'http://localhost/php_oop/gallery/');
+define('URLROOT', 'http://localhost/php_framework/');
 
 //SITENAME
 define('SITENAME', 'AMS PROJECT');

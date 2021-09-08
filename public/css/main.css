@@ -1,0 +1,12 @@
+#banner{
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#banner div #banner_txt_1{
+    font-size: 60px;
+}
+#banner div #banner_txt_2{
+    font-size: 23px;
+}
