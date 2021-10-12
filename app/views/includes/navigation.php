@@ -1,23 +1,61 @@
-<header class="d-flex flex-wrap justify-content-center py-3 mb-4 position-fixed w-100">
-    <a href="" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto ms-4 text-dark text-decoration-none text-white fw-bold fs-2">AMS</a>
-    <ul class="nav nav-pills me-4">
-        <li class="d-flex nav-item justify-content-center align-items-center me-4">
-            <a href="<?=URLROOT?>/pages/index" class="nav-link text-white fs-5 fw-bold">Home</a>
+<header class="top_nav">
+    <h1 class="logo_box">
+        <a href="<?=URLROOT?>" class="logo">AMS</a>
+    </h1>
+    <div class="pc_menu_box pc">
+        <ul class="top_menu pc">
+            <li>
+                <a href="<?=URLROOT?>/pages/index">Home</a>
+            </li>
+            <li>
+                <a href="<?=URLROOT?>/pages/about">About</a>
+            </li>
+            <li>
+                <a href="<?=URLROOT?>/pages/projects">Projects</a>
+            </li>
+            <li>
+                <a href="<?=URLROOT?>/pages/blog">Blog</a>
+            </li>
+            <li>
+                <a href="<?=URLROOT?>/pages/contact">Contact</a>
+            </li>
+            <li>
+                <?php if(isLoggedIn()){?>
+                    <a href="<?=URLROOT?>/users/logout" class="btn_1">Logout</a>
+                <?php }else{?>
+                    <a href="<?=URLROOT?>/users/login" class="btn_1">Login</a>
+                <?php }?>
+            </li>
+        </ul>
+    </div>
+</header>
+<div class="mobile_menu_btn_box mobile">
+    <button class="mobile_btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+</div>
+<div class="mobile_menu_box mobile">
+    <ul class="top_menu mobile">
+        <li class="menu_li">
+            <a href="<?=URLROOT?>/pages/index">Home</a>
         </li>
-        <li class="d-flex nav-item justify-content-center align-items-center me-4">
-            <a href="<?=URLROOT?>/pages/about" class="nav-link text-white fs-5 fw-bold">About</a>
+        <li class="menu_li">
+            <a href="<?=URLROOT?>/pages/about">About</a>
         </li>
-        <li class="d-flex nav-item justify-content-center align-items-center me-4">
-            <a href="<?=URLROOT?>/pages/projects" class="nav-link text-white fs-5 fw-bold">Projects</a>
+        <li class="menu_li">
+            <a href="<?=URLROOT?>/pages/projects">Projects</a>
         </li>
-        <li class="d-flex nav-item justify-content-center align-items-center me-4">
-            <a href="<?=URLROOT?>/pages/blog" class="nav-link text-white fs-5 fw-bold">Blog</a>
+        <li class="menu_li">
+            <a href="<?=URLROOT?>/pages/blog">Blog</a>
         </li>
-        <li class="d-flex nav-item justify-content-center align-items-center me-4">
-            <a href="<?=URLROOT?>/pages/contact" class="nav-link text-white fs-5 fw-bold">Contact</a>
+        <li class="menu_li">
+            <a href="<?=URLROOT?>/pages/contact">Contact</a>
         </li>
-        <li class="d-flex nav-item justify-content-center align-items-center me-4">
-            <a href="<?=URLROOT?>/users/login" class="btn btn-warning">Login</a>
+        <li>
+            <a href="<?=URLROOT?>/users/login" class="btn_1">Login</a>
         </li>
     </ul>
-</header>
+</div>
+<div class="dummy mobile"></div>

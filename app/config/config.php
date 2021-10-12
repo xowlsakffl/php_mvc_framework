@@ -3,7 +3,7 @@
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASS', 'dnwnd112!!');
-define('DB_NAME', 'php_oop_udemy_gallery');
+define('DB_NAME', 'php_mvc_framework_1');
 
 //APPROOT
 define('APPROOT', dirname(dirname(__FILE__)));

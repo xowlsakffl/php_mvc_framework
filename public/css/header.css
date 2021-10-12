@@ -1,0 +1,178 @@
+.top_nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+.top_nav .logo_box{
+    float: left;
+}
+.top_nav .logo_box .logo{
+    width: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color:#fff;
+}
+/*PC*/
+@media screen and (min-width:1300px){
+    .top_nav{
+        height: 80px;
+    }
+    .top_nav .logo_box{
+        margin-left: 30px;
+    }
+    .top_nav .logo_box .logo{
+        line-height: 80px;
+    }
+    .top_nav .pc_menu_box .top_menu{
+        float: right;
+        margin-right: 30px;
+    }
+    .top_nav .pc_menu_box .top_menu li{
+        float: left;
+        line-height: 80px;
+        padding: 0 5px;
+    }
+    .top_nav .pc_menu_box .top_menu li a{
+        padding:0 20px;
+        color:#fff;
+        font-weight: 500;
+    }
+    .top_nav .pc_menu_box .top_menu li .btn_1{
+        padding:10px 13px;
+        color:#333;
+        font-weight: bold;
+    }
+}
+/*PAD*/
+@media screen and (min-width:768px) and (max-width:1299px){
+    .top_nav{
+        height: 80px;
+    }
+    .top_nav .logo_box{
+        margin-left: 30px;
+    }
+    .top_nav .logo_box .logo{
+        line-height: 80px;
+    }
+    .top_nav .pc_menu_box .top_menu{
+        float: right;
+        margin-right: 30px;
+    }
+    .top_nav .pc_menu_box .top_menu li{
+        float: left;
+        line-height: 80px;
+        padding: 0 5px;
+    }
+    .top_nav .pc_menu_box .top_menu li a{
+        padding:0 20px;
+        color:#fff;
+        font-weight: 500;
+    }
+    .top_nav .pc_menu_box .top_menu li .btn_1{
+        padding:10px 13px;
+        color:#333;
+        font-weight: bold;
+    }
+}
+/*MOBILE*/
+@media screen and (max-width:767px){
+    .top_nav{
+        height: 60px;
+    }
+    .top_nav .logo_box{
+        margin-left: 15px;
+    }
+    .top_nav .logo_box .logo{
+        line-height: 60px;
+    }
+    .mobile_menu_box{
+        position: fixed;
+        width: 70%;
+        height: 100%;
+        max-width: 500px;
+        transition: all 0.4s;
+        right: -100%;
+        background-color: #fff;
+        z-index: 101;
+    }
+    .mobile_menu_box.active{
+        right: 0;
+    }
+    .mobile_menu_box .top_menu{
+        background-color: #fff;
+        box-sizing: border-box;
+    }
+    .mobile_menu_box .top_menu .menu_li{
+        display: block;
+        border-bottom: 1px solid #DDD;
+    }
+    .mobile_menu_box .top_menu li:last-child{
+        margin-top: 30px;
+        border-bottom: none;
+        padding:0 20px
+    }
+    .mobile_menu_box .top_menu .menu_li a{
+        display: block;
+        padding:20px 20px;
+        font-weight: 500;
+        color:#333;
+    }
+    .mobile_menu_box .top_menu li .btn_1{
+        color:#333;
+        font-weight: 500;
+    }
+    .mobile_menu_btn_box{
+        position: fixed;
+        z-index: 102;
+        top: 5px;
+        right: 18px;
+    }
+    .mobile_menu_btn_box .mobile_btn{
+        position: relative;
+        z-index: 99;
+        width: 23px;
+        height: 18px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-top: 18px;
+    }
+    .mobile_menu_btn_box .mobile_btn span{
+        position: absolute;
+        width: 23px;
+        height: 2px;
+        left: 0;
+        top: 0;
+        background: #333;
+        transition: all 0.4s;
+        background-color: #fff;
+    }
+    .mobile_menu_btn_box .mobile_btn span:nth-child(2){
+        transform: translateY(8px);
+    }
+    .mobile_menu_btn_box .mobile_btn span:nth-child(3){
+        transform: translateY(16px);
+    }
+    .mobile_menu_btn_box .mobile_btn span:nth-child(1).active{
+        transform: translateY(8px) rotate(45deg);
+        background-color: #333;
+    }
+    .mobile_menu_btn_box .mobile_btn span:nth-child(2).active{
+        display: none;
+    }
+    .mobile_menu_btn_box .mobile_btn span:nth-child(3).active{
+        transform: translateY(8px) rotate(-45deg);
+        background-color: #333;
+    }
+    .dummy{
+        position: fixed;
+        display: none;
+        z-index: 100;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0.5;
+    }
+}

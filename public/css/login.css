@@ -1,0 +1,262 @@
+.login{
+    width: 100%;
+    height: 100%;
+}
+/*PC*/
+@media screen and (min-width:1300px){
+    .login{
+        background-color: #333;
+    }
+    .login_box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 500px;
+        background-color: #fff;
+        padding:60px;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+    .login_box .login_title{
+        margin-bottom: 40px;
+        font-size: 30px;
+        letter-spacing: -0.2px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .login_box .form_control{
+        padding:6px 0;
+        width: 100%;
+    }
+    .login_box .form_control label{
+        display: block;
+        margin-bottom: 5px;
+        font-size: 13px;
+        font-weight: 500;
+        color:#333;
+    }
+    .login_box .form_control .form_input{
+        position: relative;
+    }
+    .login_box .form_control .form_input input{
+        padding:12px 12px 12px 40px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 100%;
+        border-bottom: 1px solid #CCC;
+    }
+    .login_box .form_control .form_input #icon{
+        position: absolute;
+        top: 10px;
+        left: 5px;
+        font-size: 23px;
+        color:#AAA;
+    }
+    .login_box .form_control .form_input input:focus{
+        outline: none;
+    }
+    .login_box .form_control .invalid_feedback{
+        color:#f71240;
+        height: 20px;
+        display: block;
+        width: 100%;
+    }
+    .login_box .form_control .forgot_pw_box a{
+        color:rgb(53, 145, 236)
+    }
+    .login_box .login_btn{
+        display: block;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        border:none;
+        border-radius: 10px;
+        background-color: #FFCC00;
+        font-weight: 500;
+    }
+    .login_box .signup_box{
+        margin-top: 60px;
+        text-align: center;
+    }
+    .login_box .signup_box .signup{
+        color:#333;
+        letter-spacing: -0.2px;
+        font-weight: 500;
+    }
+    .login_box .forgot_pw_box{
+        text-align: right;
+        margin-top: 5px;
+    }
+}
+/*PAD*/
+@media screen and (min-width:768px) and (max-width:1299px){
+    .login{
+        background-color: #333;
+    }
+    .login_box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 500px;
+        background-color: #fff;
+        padding:60px;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+    .login_box .login_title{
+        margin-bottom: 40px;
+        font-size: 30px;
+        letter-spacing: -0.2px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .login_box .form_control{
+        padding:6px 0;
+        width: 100%;
+    }
+    .login_box .form_control label{
+        display: block;
+        margin-bottom: 5px;
+        font-size: 13px;
+        font-weight: 500;
+        color:#333;
+    }
+    .login_box .form_control .form_input{
+        position: relative;
+    }
+    .login_box .form_control .form_input input{
+        padding:12px 12px 12px 40px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 100%;
+        border-bottom: 1px solid #CCC;
+    }
+    .login_box .form_control .form_input #icon{
+        position: absolute;
+        top: 10px;
+        left: 5px;
+        font-size: 23px;
+        color:#AAA;
+    }
+    .login_box .form_control .form_input input:focus{
+        outline: none;
+    }
+    .login_box .form_control .invalid_feedback{
+        color:#f71240;
+        height: 20px;
+        display: block;
+        width: 100%;
+    }
+    .login_box .form_control .forgot_pw_box a{
+        color:rgb(53, 145, 236)
+    }
+    .login_box .login_btn{
+        display: block;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        border:none;
+        border-radius: 10px;
+        background-color: #FFCC00;
+        font-weight: 500;
+    }
+    .login_box .signup_box{
+        margin-top: 60px;
+        text-align: center;
+    }
+    .login_box .signup_box .signup{
+        color:#333;
+        letter-spacing: -0.2px;
+        font-weight: 500;
+    }
+    .login_box .forgot_pw_box{
+        text-align: right;
+        margin-top: 5px;
+    }
+}
+/*MOBILE*/
+@media screen and (max-width:767px){
+    .top_nav .logo_box .logo{
+        color:#333;
+    }
+    .mobile_btn span{
+        background-color:#333 !important;
+    }
+    .login{
+        background-color: #fff;
+        position: relative;
+    }
+    .login_box{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        background-color: #fff;
+        padding:60px;
+        box-sizing: border-box;
+    }
+    .login_box .login_title{
+        margin-bottom: 40px;
+        font-size: 30px;
+        letter-spacing: -0.2px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .login_box .form_control{
+        padding:20px 0;
+        width: 100%;
+    }
+    .login_box .form_control label{
+        display: block;
+        margin-bottom: 5px;
+        font-size: 13px;
+        font-weight: 500;
+        color:#333;
+    }
+    .login_box .form_control .form_input{
+        position: relative;
+    }
+    .login_box .form_control .form_input input{
+        padding:12px 12px 12px 40px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 100%;
+        border-bottom: 1px solid #CCC;
+    }
+    .login_box .form_control .form_input img{
+        position: absolute;
+        top: 10px;
+        left: 5px;
+    }
+    .login_box .form_control .form_input input:focus{
+        outline: none;
+    }
+    .login_box .login_btn{
+        display: block;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        border:none;
+        border-radius: 10px;
+        background-color: #FFCC00;
+        font-weight: 500;
+    }
+    .login_box .signup_box{
+        margin-top: 60px;
+        text-align: center;
+    }
+    .login_box .signup_box .signup{
+        color:#333;
+        letter-spacing: -0.2px;
+        font-weight: 500;
+    }
+    .login_box .forgot_pw_box{
+        text-align: right;
+        margin-top: 5px;
+    }
+}
