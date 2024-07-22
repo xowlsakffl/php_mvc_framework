@@ -1,4 +1,4 @@
-# 맞춤형 PHP 프레임워크
+# PHP 프레임워크
 **맞춤형 PHP 프레임워크**는 효율적이고 유연한 웹 애플리케이션 개발을 위해 직접 제작된 프레임워크입니다. 이 프레임워크는 PHP와 MySQL을 기반으로 하여, 개발자들이 신속하고 간편하게 웹 애플리케이션을 구축할 수 있도록 설계되었습니다.
 
 ## 개요
@@ -23,4 +23,4 @@
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
 ## 개발 기간
-- 1개월
+- 3일
